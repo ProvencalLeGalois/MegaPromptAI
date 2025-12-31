@@ -1,0 +1,7 @@
+{
+  "name": "PromptMaster AI Elite",
+  "description": "Studio IA multi-modal : Optimisation de prompt, Chatbot Pro, Génération d'images (Image Pro) et Analyse Vision.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
