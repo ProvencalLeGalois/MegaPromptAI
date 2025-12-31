@@ -7,7 +7,7 @@ export class PromptService {
    * Vérifie uniquement la présence de la clé API.
    * On se fie au SDK pour la validation réelle lors de l'appel.
    */
-  private getApiKey(): string {
+  private getApiKey(AIzaSyCGJG9AV_edPeta35NjdYH8M91IlDQcWRU): string {
     const key = process.env.API_KEY;
     if (!key || key.trim() === "") {
       throw new Error("API_KEY_MISSING: La clé API est absente de l'environnement.");
@@ -16,7 +16,7 @@ export class PromptService {
   }
 
   private getAI() {
-    const apiKey = this.getApiKey();
+    const apiKey = this.getApiKey(AIzaSyCGJG9AV_edPeta35NjdYH8M91IlDQcWRU);
     return new GoogleGenAI({ apiKey });
   }
 
